@@ -3,7 +3,7 @@
   <groupId>org.jvnet.hudson</groupId>
   <artifactId>client-demo</artifactId>
   
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
   <name>XML API client demo</name>
   <inceptionYear>2006</inceptionYear>
   <description>Demonstrates how to write a client for the remote API</description>
@@ -13,7 +13,6 @@
     <connection>scm:cvs:pserver:guest@cvs.dev.java.net:/cvs:hudson/hudson/extras/client-demo</connection>
     <developerConnection>scm:cvs:pserver:kohsuke@cvs.dev.java.net:/cvs:hudson/hudson/extras/client-demo</developerConnection>
     <url>https://hudson.dev.java.net/source/browse/hudson/hudson/extras/client-demo</url>
-    <tag>client-demo-1_0</tag>
   </scm>
 
   <distributionManagement>
