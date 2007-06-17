@@ -1,0 +1,77 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jvnet.hudson</groupId>
+  <artifactId>client-demo</artifactId>
+  
+  <version>1.0-SNAPSHOT</version>
+  <name>XML API client demo</name>
+  <inceptionYear>2006</inceptionYear>
+  <description>Demonstrates how to write a client for the remote API</description>
+  <url>https://hudson.dev.java.net/</url>
+
+  <scm>
+    <connection>scm:cvs:pserver:guest@cvs.dev.java.net:/cvs:hudson/hudson/extras/client-demo</connection>
+    <developerConnection>scm:cvs:pserver:kohsuke@cvs.dev.java.net:/cvs:hudson/hudson/extras/client-demo</developerConnection>
+    <url>https://hudson.dev.java.net/source/browse/hudson/hudson/extras/client-demo</url>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>local-repository</id>
+      <url>file:${path-to-m2-repo.java.net}</url>
+    </repository>
+  </distributionManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>dom4j</groupId>
+      <artifactId>dom4j</artifactId>
+      <version>1.6.1</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>org.jvnet.hudson.client_demo.Main</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+          <archive>
+            <manifest>
+              <mainClass>org.jvnet.hudson.client_demo.Main</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>attached</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
