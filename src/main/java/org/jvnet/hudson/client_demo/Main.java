@@ -5,6 +5,8 @@ import org.dom4j.Document;
 import org.dom4j.Element;
 
 import java.net.URL;
+import java.net.Authenticator;
+import java.net.PasswordAuthentication;
 import java.util.List;
 
 /**
@@ -18,6 +20,17 @@ public class Main {
         // every Hudson model object exposes the .../api/xml, but in this example
         // we'll just take the root object as an example
         URL url = new URL("http://deadlock.netbeans.org/hudson/api/xml");
+
+        // if you are calling security-enabled Hudson and
+        // need to invoke operations and APIs that are protected,
+        // then set specify the user name / password like this
+        /*
+        Authenticator.setDefault(new Authenticator() {
+            protected PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication("admin","admin".toCharArray());
+            }
+        });
+        */
 
         // read it into DOM.
         Document dom = new SAXReader().read(url);
