@@ -23,14 +23,8 @@ public class Main {
 
         // if you are calling security-enabled Hudson and
         // need to invoke operations and APIs that are protected,
-        // then set specify the user name / password like this
-        /*
-        Authenticator.setDefault(new Authenticator() {
-            protected PasswordAuthentication getPasswordAuthentication() {
-                return new PasswordAuthentication("admin","admin".toCharArray());
-            }
-        });
-        */
+        // consult the 'SecuredMain" class
+        // in this package for an example using HttpClient.
 
         // read it into DOM.
         Document dom = new SAXReader().read(url);

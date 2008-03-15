@@ -17,8 +17,9 @@ import java.io.IOException;
 public class SecuredMain {
     /**
      * On most security configurations, except "delegate to servlet container"
-     * authentication, simply sending in the BASIC authentication works.
-     * See the {@link Main} for this example.
+     * authentication, simply sending in the BASIC authentication pre-emptively works.
+     * See http://hc.apache.org/httpclient-3.x/authentication.html
+     * for how to configure pre-emptive authentication.
      *
      * <p>
      * However, in the "delegate to servlet container" mode, BASIC auth
