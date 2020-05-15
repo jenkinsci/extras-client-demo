@@ -10,9 +10,9 @@
   <url>https://github.com/jenkinsci/extras-client-demo/</url>
 
   <scm>
-    <connection>scm:cvs:pserver:guest@cvs.dev.java.net:/cvs:hudson/hudson/extras/client-demo</connection>
-    <developerConnection>scm:cvs:pserver:kohsuke@cvs.dev.java.net:/cvs:hudson/hudson/extras/client-demo</developerConnection>
-    <url>https://hudson.dev.java.net/source/browse/hudson/hudson/extras/client-demo</url>
+    <connection>scm:git:git://github.com/jenkinsci/extras-client-demo.git</connection>
+    <developerConnection>scm:git:git@github.com:jenkinsci/extras-client-demo.git</developerConnection>
+    <url>https://github.com/jenkinsci/extras-client-demo</url>
   </scm>
 
   <distributionManagement>
