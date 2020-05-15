@@ -7,7 +7,7 @@
   <name>XML API client demo</name>
   <inceptionYear>2006</inceptionYear>
   <description>Demonstrates how to write a client for the remote API</description>
-  <url>https://hudson.dev.java.net/</url>
+  <url>https://github.com/jenkinsci/extras-client-demo/</url>
 
   <scm>
     <connection>scm:cvs:pserver:guest@cvs.dev.java.net:/cvs:hudson/hudson/extras/client-demo</connection>
