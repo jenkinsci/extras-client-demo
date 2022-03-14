@@ -10,7 +10,7 @@
   <url>https://github.com/jenkinsci/extras-client-demo/</url>
 
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/extras-client-demo.git</connection>
+    <connection>scm:git:https://github.com/jenkinsci/extras-client-demo.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/extras-client-demo.git</developerConnection>
     <url>https://github.com/jenkinsci/extras-client-demo</url>
   </scm>
